@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Env files (IMPORTANT)
+.env
+*.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor (optional but safe)
+.vscode/
+.idea/
