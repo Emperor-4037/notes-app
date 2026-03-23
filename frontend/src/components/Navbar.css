@@ -1,0 +1,90 @@
+/* ── Navbar ── */
+
+.navbar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.navbar-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  transition: background 0.2s;
+}
+
+.navbar-brand:hover {
+  background: var(--bg-hover);
+}
+
+.navbar-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.navbar-logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navbar-email {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  display: none; /* Hide on very small screens */
+}
+
+@media (min-width: 600px) {
+  .navbar-email {
+    display: block;
+  }
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-text {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.btn-text:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}

@@ -1,0 +1,102 @@
+/* ── Home / Notes Dashboard ── */
+
+.home-layout {
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.home-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.home-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.home-subtitle {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin: 0.25rem 0 0;
+}
+
+.btn-create {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.25rem;
+  white-space: nowrap;
+}
+
+.btn-create span {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* ── Error ── */
+.home-error {
+  background: hsl(0, 80%, 96%);
+  color: hsl(0, 70%, 45%);
+  border: 1px solid hsl(0, 70%, 85%);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.88rem;
+}
+
+/* ── Loader ── */
+.home-loader {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.spinner-lg {
+  width: 36px;
+  height: 36px;
+}
+
+/* ── Empty state ── */
+.home-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  animation: fadeSlideUp 0.4s ease-out;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.home-empty h2 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin: 0 0 0.35rem;
+}
+
+.home-empty p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ── Notes Grid ── */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
