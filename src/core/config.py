@@ -1,14 +1,10 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from typing import Optional
-from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 class Settings(BaseSettings):
     DB_USER : str
     DB_PASS : str
-    DB_HOST : Optional[str] = "127.0.0.1"
-    DB_PORT : Optional[int] = 5432
+    DB_HOST : str
+    DB_PORT : int = 5432
     DB_NAME : str
 
 
@@ -18,7 +14,7 @@ class Settings(BaseSettings):
 
 
     model_config = SettingsConfigDict(
-        env_file = BASE_DIR / ".env",
+        env_file = ".env",
         env_file_encoding="utf-8",
         extra="ignore"
         )
